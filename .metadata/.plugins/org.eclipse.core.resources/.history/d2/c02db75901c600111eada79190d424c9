@@ -1,0 +1,20 @@
+package com.kh.chap02.encapsulation.model.vo;
+
+// 필드부
+// 생선자부
+// 메소드부
+
+public class CellPhone {
+	// 필드(Field)부
+	/*
+	 * 값을 담는 공간
+	 * 객체들이 가져야 할 공통적인 속성을 기술해 놓는 영역
+	 	Ex) 스마트폰 == 제품명, 제조사, 사이즈, 색상
+	 */	
+	private String productName;
+	private String networkProvider;
+	private double size;
+	private String color;
+
+	
+}

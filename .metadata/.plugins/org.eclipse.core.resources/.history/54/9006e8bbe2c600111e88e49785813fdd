@@ -1,0 +1,50 @@
+package com.kh.Practice;
+
+public class Player {
+
+	/* 이름
+	 * HP
+	 * 공격력
+	 * 레벨
+	 * 스킬
+	 */
+	private String name;
+	private int hp = 40;
+	private int damage;
+	private int level;
+	private String[] skill = new String[3];
+	
+	// 생성자부
+	
+	// 메소드부
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setHp(int hp) {
+		this.hp = hp;
+	}
+	public int getHp() {
+		return hp;
+	}
+	public void setDamage(int damage) {
+		this.damage = damage;
+	}
+	public int getDamage() {
+		return damage;		
+	}
+	public void setLevel(int level) {
+		this.level = level;
+	}
+	public int getLevel() {
+		return level;
+	}
+	public void setSkill(String[] skill) {
+		this.skill = skill;
+	}
+	public String[] getSkill() {
+		return skill;	
+	}
+}

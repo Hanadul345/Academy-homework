@@ -1,0 +1,14 @@
+package com.kh.chap06.run;
+
+import com.kh.chap06.controller.MethodController;
+
+public class Run {
+	public static void main(String[] args) {
+		
+		MethodController m1 = new MethodController();
+	}
+	
+	}
+	
+
+}

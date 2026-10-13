@@ -1,0 +1,20 @@
+package com.kh.conditon;
+
+import java.util.Scanner;
+
+public class ConditionSwitch {
+
+	public void method0() {
+		// 스위치문 공부하기!!
+		Scanner sc = new Scanner(System.in);
+		System.out.print("몇 층 가시나요? (B1 / B2 / B3) > ");
+		String Floor = sc.nextLine();
+		
+		switch(floor) {
+		case "B1" : System.out.println("지하 1층입니다");break;
+		case "B2" : System.out.println("지하 2층입니다");break;
+		case "B3" : System.out.println("지하 3층입니다");break;
+
+		}
+	}
+}

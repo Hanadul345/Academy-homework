@@ -1,0 +1,48 @@
+package com.kh.array;
+
+public class Array {
+
+	public void method1() {
+
+		//배열
+		// 1) 자료형 배열식별자
+		// 2) 자료형[] 배열 식별자; -> 두번째 방법 당첨
+		/* ex
+		int[] nums;
+		double[] d;
+		char[] c;
+		String[] s;
+		*/
+		// 2. 배열할당
+		// int [ ] nums;  <= 배열 선언
+		// nums  = new int [3];  <= 할당
+		// int[ ] arr = new int [3]; <= 선언 & 동시에 할당
+		// nums 라는 정수형 배열을 선언, 3칸 할당 받기
+		
+		int [] nums = new int[3];
+		System.out.println(nums);
+		
+		nums[0] = 10;
+		nums[1] = 21;
+		nums[2] = 30;
+		
+		/*System.out.println(nums[0]);
+		System.out.println(nums[1]);
+		System.out.println(nums[2]);
+		*/
+		System.out.println(nums[0] + nums[1] +nums[2]);
+			
+		}
+	public void method2() {
+		// Ai활용에 대한 중요도 => "현실 세계에 존재하는 어떤 문제를 해결했음."
+		// 내가 왜 이 기술을 선택해서 사용했음는지.
+		// ex) 나는 아침 출근 시 1층에 엘베 안 와있으면 답답함
+		// 1층에 엘베가 있을 때 건물 안으로 들어가고 싶음.
+		// 1. 엘베 앱을 만들어서 1층 근무자가 버튼 미리 눌러놓기 어쩌구 -> 인건비 보류
+		// 2. 행태를 분석해서 1층에 와있을 법한 시간 검토
+		
+		int[] nums = new int[3];
+		
+	}
+}
+

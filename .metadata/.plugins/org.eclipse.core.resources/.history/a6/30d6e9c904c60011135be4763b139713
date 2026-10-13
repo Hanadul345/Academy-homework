@@ -1,0 +1,32 @@
+package com.kh.chap02.encapsulation.model.vo;
+
+// 필드부
+// 생선자부
+// 메소드부
+
+public class CellPhone {
+	// 필드(Field)부
+	/*
+	 * 값을 담는 공간
+	 * 객체들이 가져야 할 공통적인 속성을 기술해 놓는 영역
+	 	Ex) 스마트폰 == 제품명, 제조사, 사이즈, 색상
+	 */	
+	private String productName;
+	private String networkProvider;
+	private double size;
+	private String color;
+	// 필드가 외부에서는 볼 수 없다.
+	// 필드가 외부에서 보이지 않음으로, private 로 선언한 메소드(요리대)는 불러오는 것이 불가능함.
+	// 속성(데이터)과 해당 데이터를 조작하는 행동(메소드)를 하나의 단위로 묶는 것
+
+	public void setSize(double size) {
+		//System.out.println(size);
+		System.out.println("setSize 35행 : " + this);
+		size = size;
+		
+		
+		// Scope 안에서는 해당 영역안 지역 변수가 식별자 우선권을 가짐
+	}
+
+
+}

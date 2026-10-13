@@ -1,0 +1,27 @@
+package com.kh.run;
+
+import com.kh.conditon.ConditionElse;
+import com.kh.conditon.ConditionIf;
+import com.kh.conditon.ConditionSwitch;
+import com.kh.loop.LoopFor;
+
+public class Run {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ConditionIf oc = new ConditionIf();
+		//oc.method0();
+		//oc.quiz();
+		ConditionElse ce = new ConditionElse();
+		//ce.method1();
+		//ce.method2();
+		//ce.ageCheck();
+		ConditionSwitch cs = new ConditionSwitch();
+		//cs.method0();
+		//cs.method2();
+		LoopFor LF = new LoopFor();
+		//LF.method0();
+		LF.method1();
+	}
+
+}

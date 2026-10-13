@@ -1,0 +1,18 @@
+package com.kh.run;
+
+import com.kh.array.Array;
+import com.kh.conditon.ConditionIf;
+
+public class run {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//
+		Array ay = new Array();
+		ay.method1();
+		
+
+		
+
+	
+	}
+}

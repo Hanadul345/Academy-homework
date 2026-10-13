@@ -1,0 +1,58 @@
+package com.kh.chap06.controller;
+
+public class MethodController {
+	/*
+	 * 프로그래밍 언어에서의 함수: 특정 작업 수행하기 위한 코드 블럭
+	 * 1. 재사용화
+	 * 2. 모듈화
+	 * 
+	 * 객체 지향 프래로그래밍에서의 함수: 객체가 수행할 수 있는 행동을 정의한 코드 블럭
+	 * 특정 자료형에서만 사용이 가능한 함수
+	 * 
+	 * [표현법]
+	 * 접근제한자 예약어 반환형 ㅁ소드식별자(매개변수의 자료형 매개변수식별자){
+	 * 		수행할 코드;
+	 * 		return 반환값;
+	 *  생략 가능한 것 : 예약어. 매개변수, return(void) 생략하고 
+	 *  반환형 : 반환값이 존재할 시 반한값의 자료형
+	 *  메소드 호출 시 전달 인자값 => 매개변수의 자료형 및 개수가 일치해야함.
+	 */
+	
+	// 정수 2개를 받아 합을 반환해주는 기능 구현
+	// Method Signature
+	
+	public int add(int a, int b) { //자주 사용할 액션등을 단축키화 시켜서 만든거
+		return a + b; //Return value
+		}
+	//근본 함수는 아래와 같다. 하나의 값을 넣었을 때 하나의 값이 나오는 것. 이런것을 pure 함수
+	//근본있는 함수란 [매개변수], [반환값]이 있어야 한다.
+	public int fn(int num) {
+		return num*2;
+	}
+	private String returnStr() {
+		return "반환값";
+	}
+	public String fn2() {
+		return returnStr();
+	}
+	
+	/*
+	 * 메소드 오버로딩(Method Overloading)
+	 * "하나의 클래스" 안에 동일한 메소드 식별자로 여러 개의 메소드를 정의하는 기술
+	 * 1. 매개변수 자료형의 개수, 순서, 종류를 각각 다르게 작성해야함.
+	 * 2. 매개변수 식별자, [접근제한자 public, private 등], [반환타입 return 이니 뭐니..]은 메소드 오버로딩과 연관이 없음.
+	 *
+	 */
+	public void method(int a) {
+		System.out.println("메소드 오버로딩1");
+	}
+	public void method(int a, char b) {
+		System.out.println("메소드 오버로딩2");
+	}
+	public void method(int a, int b) {
+		System.out.println("메소드 오버로딩3");
+	}
+	public void metho(short a, int b) {
+		System.out.println("메소드 오버로딩4"); // 가능하다.
+	}
+}

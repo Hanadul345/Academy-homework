@@ -1,0 +1,35 @@
+package com.kh.chap01.abstration.run;
+
+import com.kh.chap01.abstration.model.vo.일렌시아;
+
+public class 일렌시아Run {
+	
+	public static void main(String[] args) {
+		
+		/*public String name1; // 캐릭터이름 저장해야겠쥐?
+		public String tendency1; // 성향
+		public int age1; // 나이
+		public char sex1; // 성별을 저장
+		public int hp1; // 체력 총량
+		public int mana1; // 마나 총량
+		
+		public String name2; // 캐릭터이름 저장해야겠쥐?
+		public String tendency2; // 성향
+		public int age2; // 나이
+		public char sex2; // 성별을 저장
+		public int hp2; // 체력 총량
+		public int mana2; // 마나 총량
+		*/
+		
+		일렌시아 c = new 일렌시아();
+		c.name1 = "Hoe";
+		c.tendency = "선";
+		c.age1 = "6";
+		
+	}
+	
+			
+	
+	
+	
+}

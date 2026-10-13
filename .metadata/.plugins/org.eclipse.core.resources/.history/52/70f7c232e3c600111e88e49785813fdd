@@ -1,0 +1,33 @@
+package com.kh.chap01.abstration.model.vo;
+
+public class Dog {
+	// [Field값] Class 안에 선언한 변수를 필드값이라 한다.
+	// 이름, 종, 나이, 성별, 중성화여부
+	public String name; // 개이름 저장해야겠쥐?
+	public String species; // 종류
+	public int age; // 나이
+	public char sex; // 성별을 저장
+	public boolean neuter; // 중성화 여부
+	
+	// [생성자 필드]
+	// [메소드부] => 개가 실행할 수 있는
+	// dog.walk();
+	public void walk() {
+		System.out.println(name + "이(가) 걸어요");
+		// 걸을 때, 내 이름을 말 하면서 걷고 싶음.
+		// Walk 메소드 입장에선 나의 이름은? 내부에 있는지, 외부에 있는지? 뭘까요?
+		// 내부에 있다.		
+	}
+	public void swingTail() {
+		System.out.println(name + "이(가) 꼬리를 흔듭니다.");
+		age++;
+		if(age<10) {
+			System.out.println(name + "는(은) 즐거워요");
+		} else
+			System.out.println(name + "는 늙어서 꼬리를 흔들지 못해요.");
+	}
+	
+	
+	
+	
+}

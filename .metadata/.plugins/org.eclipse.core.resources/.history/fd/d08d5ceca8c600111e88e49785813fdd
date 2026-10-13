@@ -1,0 +1,20 @@
+package com.kh.chap04.view;
+
+import com.kh.chap04.Controller.FieldController;
+
+public class FieldView {
+
+	public void check() {
+		FieldController fc = new FieldController(); // Field~란 자료형에 fc란 지역변수로 heap 영역에 할당. 주소값 fc
+		
+		System.out.println(fc.global);
+		// System.out.println(local); // 변수선언이 이뤼지지 않음.
+		// System.out.println(parameter); // 마찬가지
+		// fc.checkVariable(); // 해당 주소값을 호출하기엔 parameter 초기값이 설정이 되어 있지 않음.
+		fc.checkVariable(10);
+		
+		fc = null;
+		System.out.println(fc.global)
+		
+	}
+}

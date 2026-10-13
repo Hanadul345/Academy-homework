@@ -1,0 +1,38 @@
+package com.kh.chap05.model.dto;
+
+public class Member {
+	//필드부
+	private String userID;
+	private String userPwd;
+	private String nickName;
+	//생성자부
+	
+	// 메소드부 (액션)(
+	//(getter, setter, info) => 만들기 시작
+	public void setUserID(String userId) {
+		this.userID = userID;
+	}	
+		
+	public String getUserID() {
+		return userID;
+	}
+	
+	public void setUserPwd(String userPwd) {
+		this.userPwd = userPwd;
+	}
+	public String getUserPwd() {
+		return userPwd;		
+	}
+	public void setNickName(String nickName) {
+		this.nickName = nickName;
+	}
+	public String getNickName() {
+		return nickName;
+	}
+	public String info() {
+		return "아이디: " + userID 
+			+ "\n패스워드: " + userPwd
+			+ "\n닉네임: " + nickName;			
+	}
+	
+}

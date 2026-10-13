@@ -1,0 +1,73 @@
+package com.kh.loop;
+
+public class LoopWhile {
+	/* while문
+	 * [표현식]
+	 * 초기식;
+	 * whle(조건식){
+	 * 		증감식;
+	 * }
+	 * 웹개발 뿐만 아니라 다른 개발환경에서도 자주 쓰임.
+	 * for => 개발자가 몇 번 반복해야하는지 명확하게 알고 있으면 사용.
+	 * while => 개발자가 몇 번 반복하는지 모르겠다, 가늠할 수 없다.
+	
+	public void method0() {
+		//초기식, 조건식, 증감식
+		int i =0; //1
+		while(i < 3) { //2
+			System.out.println(i);
+			i++; // 증감식의 위치에 따라서, 제어 변수의 값이 변화할 있다.
+		}*/
+
+	public void method1() {
+		while(true) {
+			System.out.println("이런 느낌적인 느낌 느낌.");
+		}	
+	}
+	public void method2() {
+		// 1부터 10까지의 합계를 구해서 출력
+		//System.out.println(1 + 2 + 3 + 4 + 5);
+		//System.out.println(1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10);
+		// 무지성 반복문 => 불가능
+		// 조건 => 무지성 if문 가능
+		// 반복횟수 정해져있음
+		int i = 1;
+		int sum = 0;
+		while(i <= 150) {
+			//초기식, 조건식, 증감식 필요
+			sum += i;
+			i++;
+		
+		}
+		// 합계 출력
+		System.out.println(sum);
+	}
+	// 로또번호 만들어보기 v 0.1
+	public void LottoNumber() {
+		// 1~45 -> 6개 O
+		// random : 무작위
+		// Math m = new Mat();
+		//System.out.println(Math.random());
+		double number = Math.random();
+		// random -> 0.0 ~ 0.99999999999999
+		//		  -> 1 ~ 10
+		// 1단계 10을 곱한다.
+		System.out.println(number*10);
+		// 0.0 ~ 9.99999999999999
+		// 2단계 -> 10을 곱한 결과를 int 형으로 강제 변환
+		System.out.println((int)(number*10));
+		// 0~9 -> 3단계 - 10을 곱한 값에 int 형태로 변환한 뒤에 +1을 해버림
+		System.out.println((int)(number*10) + 1);
+		// 1~10
+		// System.out.println((int)(number * 45) + 1);
+		int num1 = (int)(Math.random() * 45) + 1;
+		int num2 = (int)(Math.random() * 45) + 1;
+		int num3 = (int)(Math.random() * 45) + 1;
+		int num4 = (int)(Math.random() * 45) + 1;
+		int num5 = (int)(Math.random() * 45) + 1;
+		int num6 = (int)(Math.random() * 45) + 1;
+		
+		
+		
+	}
+}

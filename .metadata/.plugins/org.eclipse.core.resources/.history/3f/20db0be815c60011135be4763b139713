@@ -1,0 +1,78 @@
+package com.kh.chap02.encapsulation.model.vo;
+
+// 필드부
+// 생선자부
+// 메소드부
+
+public class CellPhone {
+	// 필드(Field)부
+	/*
+	 * 값을 담는 공간
+	 * 객체들이 가져야 할 공통적인 속성을 기술해 놓는 영역
+	 	Ex) 스마트폰 == 제품명, 제조사, 사이즈, 색상
+	 */	
+	private String productName;
+	private String networkProvider;
+	private double size;
+	private String color;
+	// 필드가 외부에서는 볼 수 없다.
+	// 필드가 외부에서 보이지 않음으로, private 로 선언한 메소드(요리대)는 불러오는 것이 불가능함.
+	// 속성(데이터)과 해당 데이터를 조작하는 행동(메소드)를 하나의 단위로 묶는 것
+
+	public void setSize(double size) {
+						// Parameter, 매개변수
+						// 매개변수 메소드 호출 시 초기화가 강제됨.
+						// (반드시 호출값이 있어야함. ex> cp.size(); 는 오류)
+		//System.out.println(size);
+		//System.out.println("setSize 35행 : " + this);
+		//객체 내부에서 this는 해당 객체의 주소값을 가리킨다.
+		if(size > 0.0) {
+			this.size = size;	
+		} else {
+			System.out.println("올바른 입력 값이 아닙니다.");
+		}
+	}
+		// 데이터를 반환해주는 기능의 메소드 : getter() -> 반드시 있어야함.
+		/* 
+		 * 1. getter는 접근제한자 public 을 사용
+		 * 2. get필드명으로 식별자를 작성, 낙타봉 표기법 사용
+		 * 3. 꼭 만들자. setter는 안 만들기도 하지만, getter는 필수임.
+		 */
+		
+		//메소드 호출부로 size 필드 값을 돌려주고 싶음.
+		
+	public double getSize() { //public void[반환형 형태]
+		return size;
+		}
+	
+	public void setProductName(String productName) {
+		this.productName = productName;
+	}
+	/* public void setColorAndNetworkProvide(String color, String networkProvide) {
+		this.color = color;
+		this.productName = productName;
+		*/ // 관례위반. 하나의 메소드는 하나의 기능만을 수행해야 함.
+	
+	public void setColor(String color) {
+		this.color = color;
+	}
+		
+	public void setNetworkProvider(String networkProvider) {
+				this.networkProvider = networkProvider;
+	}
+	public String getProductName() {
+		return productName;
+	}
+	public String getColor() {
+		return color;
+		}
+	public String getNetworkProvider() {
+		return networkProvider;
+	}
+		
+	}
+
+		
+		
+		// Scope 안에서는 해당 영역안 지역 변수가 식별자 우선권을 가짐
+

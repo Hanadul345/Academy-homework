@@ -1,0 +1,18 @@
+package com.kh.chap06.run;
+
+import com.kh.chap06.controller.MethodController;
+
+public class Run {
+	public static void main(String[] args) {
+		
+		MethodController m1 = new MethodController();
+		// 학습방법 => 소리내어 입으로 읽자!
+		int a = m1.add(2,  3);
+		System.out.println(a);
+		
+		
+	}
+	
+	
+
+}

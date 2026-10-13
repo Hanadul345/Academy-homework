@@ -1,0 +1,51 @@
+package com.kh.chap01.abstration.model.vo;
+
+public class 일렌시아 {
+	// [Field값] Class 안에 선언한 변수를 필드값이라 한다.
+		// 이름, 성향, 나이, 성별, 체력, 마나
+		public String name1; // 캐릭터이름 저장해야겠쥐?
+		public String tendency1; // 성향
+		public int age1; // 나이
+		public char sex1; // 성별을 저장
+		public int hp1; // 체력 총량
+		public int mana1; // 마나 총량
+		
+		/* public String name2; // 캐릭터이름 저장해야겠쥐?
+		public String tendency2; // 성향
+		public int age2; // 나이
+		public char sex2; // 성별을 저장
+		public int hp2; // 체력 총량
+		public int mana2; // 마나 총량
+		*/
+		
+		// [생성자 필드]
+		
+		public 일렌시아() {}
+		public 일렌시아(String name1, String tendency1, int age1, char sex1, int hp1, int mana1) {
+			this.name1 = name1;
+			this.tendency1 = tendency1;
+			this.age1 = age1;
+			this.sex1 = sex1;
+			this.hp1 = hp1;
+			this.mana1 = mana1;
+					
+		}
+		
+		
+		// [메소드부] => 캐릭터가 실행할 수 있는 행동
+		// ex) dog.walk();
+		
+	public void attack() {
+		System.out.println(name1 + "이(가) 공격합니다.");
+		}
+
+	
+	public void defence() {
+		System.out.println(name1 + "이(가) 방어합니다.");
+		System.out.println("방어에 성공하셨습니다. 피해없음");
+			
+		}
+		
+	}
+		
+

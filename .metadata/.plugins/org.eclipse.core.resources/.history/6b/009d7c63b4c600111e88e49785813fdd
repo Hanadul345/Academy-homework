@@ -1,0 +1,12 @@
+package com.kh.chap05.run;
+
+public class Run {
+	public static void main(String[] args) {
+		// 생성자부_생성하는거 아닙니당. 생성자는 new 뒤에 붙이는 선언을 뜻함.
+		// new 로만 객체를 생성할 수 있고 다른 모든 것은 "선언" 한다고 함.
+		// 웹사이트를 만들 경우 회원 정보를 저장해야함 => 회원 정보를 저장할 방법이 없네?
+		// 생성자(Constructor) : 객체 생성 시 초기화를 담당하는 요소
+		
+	}
+	
+}

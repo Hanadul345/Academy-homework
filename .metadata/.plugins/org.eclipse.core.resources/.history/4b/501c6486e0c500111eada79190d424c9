@@ -1,0 +1,23 @@
+package com.kh.chap01.abstration.model.vo;
+
+public class 일렌시아 {
+	// [Field값] Class 안에 선언한 변수를 필드값이라 한다.
+		// 이름, 성향, 나이, 성별, 체력, 마나
+		public String name; // 캐릭터이름 저장해야겠쥐?
+		public String species; // 성향
+		public int age; // 나이
+		public char sex; // 성별을 저장
+		public int hp; // 체력 총량
+		public int mana; // 마나 총량
+		
+		
+		// [생성자 필드]
+		// [메소드부] => 캐릭터가 실행할 수 있는 행동
+		// ex) dog.walk();
+		
+	public void attack() {
+		System.out.println(name + "이(가) 공격합니다.")
+		
+	}
+		
+}

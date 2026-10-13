@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.lang.System.LoggerFinder"/>
+    <fullyQualifiedTypeName name="com.kh.conditon.ConditionElse"/>
+    <fullyQualifiedTypeName name="com.kh.loop.LoopFor"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="java.util.stream.IntStream"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="com.kh.loop.LoopWhile"/>
+    <fullyQualifiedTypeName name="com.kh.Array.Array"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="com.sun.java_cup.internal.runtime.Scanner"/>
+    <fullyQualifiedTypeName name="com.kh.chap01.abstration.model.vo.Character"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="com.kh.chap02.encapsulation.model.vo.CellPhone"/>
+    <fullyQualifiedTypeName name="com.kh.chap04.view.FieldView"/>
+    <fullyQualifiedTypeName name="com.kh.chap05.model.dto.Member"/>
+</qualifiedTypeNameHistroy>

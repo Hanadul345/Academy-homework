@@ -1,0 +1,35 @@
+package com.kh.chap05.run;
+
+import com.kh.chap05.model.dto.Member;
+
+public class Run {
+	public static void main(String[] args) {
+		// 생성자부_생성하는거 아닙니당. 생성자는 new 뒤에 붙이는 선언을 뜻함.
+		// new 로만 객체를 생성할 수 있고 다른 모든 것은 "선언" 한다고 함.
+		// 웹사이트를 만들 경우 회원 정보를 저장해야함 => 회원 정보를 저장할 방법이 없네?=> 그럼 내가 만들어야지
+		// 생성자(Constructor) : 객체 생성 시 초기화를 담당하는 요소
+		/*
+		 * 생성자의 두가지 관점
+		 * [기술]
+		 * 
+		 * 
+		 */
+		Member member = new Member(); // new 뒤에 Member(); 를 "기본 생성자" 라고 한다.
+		// 객체 생성 new를 실행할경우
+		// 1. Member.java에 입력한 정의값들이 Heap 영역에 묶음으로 생성. 필드값 
+		// 2. 생성자 실행
+		// 3. 참조값 반환
+		System.out.println(member.info());
+		
+		Member member1 = new Member("user01");
+		System.out.println(member1.info());
+	}
+		Member member2 = new Member("user02", "user03");
+	//public Member() { //매개 변수가 없는 생성자는 "기본 생성자" 라고 칭함
+		
+		Member member3 = new Member("홍길동", "user05", "1234");
+		System.out.println(member3.info());
+	
+		
+	
+}

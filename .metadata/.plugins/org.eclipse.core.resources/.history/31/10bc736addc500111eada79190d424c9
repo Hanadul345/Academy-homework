@@ -1,0 +1,12 @@
+package com.kh.chap01.abstration.run;
+
+public class Maplestory {
+
+	
+	while(true) {
+		System.out.println();
+		System.out.println(c.nickname + "의 정보!");
+		System.out.println("직업 : " + c.job);
+		System.out.println("헤어스타일 : " + c.hairStyle);
+		System.out.println();
+}

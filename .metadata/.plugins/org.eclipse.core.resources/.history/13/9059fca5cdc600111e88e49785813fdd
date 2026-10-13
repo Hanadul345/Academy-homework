@@ -1,0 +1,12 @@
+package com.kh.Practice;
+
+public class Player {
+
+	private String name;
+	private int Hp;
+	private int damage;
+	private int level;
+	private String[] skill = new String[3];
+	
+
+}

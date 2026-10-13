@@ -1,0 +1,9 @@
+package com.kh.run;
+
+import com.kh.Array.Array;
+
+public class run {
+	public static void main(String[] args) {
+		Array Ar = new Array();
+		}
+}

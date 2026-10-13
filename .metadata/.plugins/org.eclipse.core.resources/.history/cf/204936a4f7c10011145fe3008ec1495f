@@ -1,0 +1,9 @@
+package com.kh.loop;
+
+public class LoopFor { //반복문
+	
+	public void method0() {
+		System.out.println("주목!!!!!")
+	}
+
+}

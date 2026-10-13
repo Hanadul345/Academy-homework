@@ -1,0 +1,5 @@
+package com.kh.chap08.model.dto;
+
+public class Fruit {
+
+}

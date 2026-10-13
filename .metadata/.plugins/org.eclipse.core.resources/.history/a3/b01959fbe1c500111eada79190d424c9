@@ -1,0 +1,18 @@
+package com.kh.chap01.abstration.run;
+
+import com.kh.chap01.abstration.model.vo.일렌시아;
+
+public class 일렌시아Run {
+	
+	public static void main(String[] args) {
+		
+		일렌시아 c = new 일렌시아();
+		c.name1 = "Hoe";
+		c	
+	}
+	
+			
+	
+	
+	
+}

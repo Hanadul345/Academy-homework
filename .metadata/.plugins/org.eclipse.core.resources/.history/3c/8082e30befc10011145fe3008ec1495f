@@ -1,0 +1,83 @@
+package com.kh.conditon;
+
+import java.util.Scanner;
+
+public class ConditionElse {
+	/* if ~else
+	 * [표현법]
+	 * if(조건식) {
+	 * 		조건식의 결과값이 true일 경우 실행할 코드 - a 로 분류하고
+	 * } else {
+	 * 		조건식의 결과값이 false일 경우 실행할 코드 - b 로 분류
+	 * }
+	 * 
+	 *True -> a실행 / false -> b 실행
+	 *
+	 */
+	public void method1() {
+		// 팝업 응모, 드로우 응모하는거
+		// 응모 후 핸드폰 번호를 입력 받아 당첨자 번호와 같으면 축하 멘트를 출력
+		// 아니라면 다음기회에... ㅜㅠ 를 출력
+		// 010-****-9825
+		// Ctrl + Shift + O 를 클릭하면 자동으로 import가 입력된다. import 자동완성
+		Scanner sc = new Scanner(System.in);
+		System.out.print("핸드폰번호를 입력하시오 > ");
+		String phoneNumber = sc.nextLine();
+		// System.out.println(phoneNumber=="010-7643-9825"); <- XXX '-' 이 들어가서 사용 불가.	
+		//System.out.println(phoneNumber.equals("010-7643-9825"));
+				// 1. 어떤 값을 가지고? 사용자가 입력한 폰번호 == phoneNumber / 010-7643-9825
+		// 2. 어떤 연산을 할 것인지? 동등 비교
+		// ==(동등비교)의 경우 기본타입자료형 8가지만 가능하다. 8가지 boolean, char, float, double, long, int, short, byte
+		// String 은 ==로 비교를 할 수 없다.
+		
+		if(phoneNumber.equals("010-7643-9825")) {
+			System.out.print("당첨입니다 :) 축하드려요!");
+		} else { // 조건시이 false 일시
+			System.out.print("아쉽지만... 다음 기회에 ㅜ_ㅜ");
+		}
+	}
+		/* if ~ else if문
+		 * 
+		 */
+	public void method2() {
+		// 핸드폰 뒷자리만 받아서 1, 2, 3등 아쉽지만 미당첨 출력
+		// 1. 1234 , 2. 5678, 3.1111
+		//
+		Scanner sc = new Scanner(System.in);
+		System.out.print("핸드폰 뒷자리를 입력해주세요 > ");
+		// char, int, string
+		String phone = sc.nextLine();
+		System.out.println("사용자가 입력한 폰번호 : " + phone);
+		// 1번 : phone, "1234"
+		// 2번 : 동등비교 연산 -> '=='는 안된다. 이유: 문자열이기 때문에
+		// 		그래서 equals 로 해야함
+		if(phone.equals("1234")) {
+			System.out.println("1등 당첨되셨습니다.");
+		} else if(phone.equals("5678")) {
+			System.out.println("2등 당첨되셨습니다.");
+		} else if(phone.equals("1111")) {
+			System.out.println("3등 당첨되셨습니다.");
+		} else {
+			System.out.println("아쉽게도 다음 기회에....ㅠ");
+		}
+		}
+	public void ageCheck() {
+		// 사용자에게 나이를 입력 받고
+		// 입력 받은 나이에 따라 각기 다른 내용을 출력
+		// 1~12 어린이, 13~17 청소년, 18~ : 성인, 0,-: 오기입
+		Scanner sc = new Scanner(System.in);
+		System.out.print("당신의 나이는 몇 살인가요? ex> 13, 17, 34... >");
+		int age = sc.nextInt();
+				System.out.println("당신의 나이는" + age +"세입니다");
+		if(age >= 1 && age <=12) {
+			System.out.println("어린이");
+		} else if(age >= 13 && age <= 17) {
+			System.out.println("청소년");
+		} else if(age >= 18 && age <= 99) {
+			System.out.println("성인");
+		} else if(age >= 100 || age == 0 || age < 0) {
+			System.out.println("장난치지마라");
+		} else
+			System.out.println("제대로 입력해라");
+	}
+}

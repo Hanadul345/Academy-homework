@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;03_conditon/src/com/kh/conditon/conditon.java&apos; to &apos;run.java&apos;" description="Rename resource &apos;conditon.java&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/com/kh/conditon/conditon.java" name="run.java" stamp="1791268115408" updateReferences="true"/>&#x0A;&#x0A;<refactoring comment="Rename resource &apos;03_conditon/src/com/kh/run/run.java&apos; to &apos;Run.java&apos;" description="Rename resource &apos;run.java&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/com/kh/run/run.java" name="Run.java" stamp="1791268714273" updateReferences="true"/>
+</session>

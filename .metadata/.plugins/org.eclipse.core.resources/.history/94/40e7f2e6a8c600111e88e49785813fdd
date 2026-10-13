@@ -1,0 +1,29 @@
+package com.kh.chap04.Controller;
+
+/*
+ * 필드 == 멤버변수 == 속성
+ * 객체지향 프로그램이란? 데이터의 묶음
+ * 클래스를 구성하는 요소 중 하나로 (데이터 값을 대입하여 오브젝트를 정의내릴 수 있다.)
+ * 데이터를 저장하기 위한 역할(변수)
+ * 
+ * [인스턴스 변수]
+ * class 아래 적는 변수 값. new 키워드를 사용해서 해당 객체를 생성하는 순간 heap에 할당.
+ * 
+ * [클래스 변수]
+ * static 이란 예약어가 붙어 있는 필드값
+ * 
+ * [지역 변수]
+ * 특정 영역 { } (block Scope) 내부에서 선언되는 시점에 메모리 영역에 할당.
+ */
+
+public class FieldController {
+	public int global;
+	public void checkVariable(int parameter) { // parameter. 매개변수 초기화.
+		int local = 1;
+		
+		System.out.println(global);
+		System.out.println(local);
+		System.out.println(parameter);
+		
+	}
+}

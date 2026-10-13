@@ -1,0 +1,13 @@
+package com.kh.conditon;
+
+import java.util.Scanner;
+
+public class ConditionSwitch {
+
+	public void method0() {
+		// 스위치문 공부하기!!
+		Scanner sc = new Scanner(System.in);
+		System.out.print("몇 층 가시나요? (B1 / B2 / B3) > ");
+		
+	}
+}

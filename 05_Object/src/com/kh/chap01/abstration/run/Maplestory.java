@@ -1,0 +1,40 @@
+package com.kh.chap01.abstration.run;
+
+import java.util.Scanner;
+import com.kh.chap01.abstration.model.vo.Character;
+
+public class Maplestory {
+	
+	Character c = new Character();
+	c.nickname = 
+	
+	Scanner sc = new Scanner(System.in);
+	System.out.print("캐릭터의 닉네임 입력하시오");
+	
+	
+	
+
+	
+	
+	
+}
+	
+	while(true) {
+		System.out.println();
+		System.out.println(c.nickname + "의 정보!");
+		System.out.println("직업 : " + c.job);
+		System.out.println("헤어스타일 : " + c.hairStyle);
+		System.out.println();
+	
+		System.out.println("메뉴를 선택해주세요 > ")
+		System.out.print("1. 때리기 / 2. 점프 / 3. 프로그램 종료 > ");
+		int menuNo = sc.nextInt();
+		sc.nextLine();
+
+		
+		switch(menuNo) {
+		case 1 : c.attack(); break;
+		case 2 : c.jump(); break;
+		case 3 : return;
+		}
+	}
