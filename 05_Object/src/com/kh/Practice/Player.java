@@ -12,14 +12,14 @@ public class Player {
 	private int hp = 40;
 	private int damage;
 	private int level;
-	private String skill;
+	private String[] skill;
 	
 	// 생성자부
 	public Player() {}
-	public Player(String name, int hp, int damage, int level, String skill) {
+	public Player(String name, int hp, int damage, int level, String[] skill) {
 		this.name = name;
 		this.hp = hp;
-		this.damage = damage + (level*5);
+		this.damage = 5 + (level*5);
 		this.level = level;
 		this.skill = skill;
 	}
@@ -27,8 +27,16 @@ public class Player {
 	// 메소드부
 	public void 공격하기() {
 		this.damage = Player.damage();
-		hp -= -5
-		System.out.println(Goblin.hp)
+		Goblin.hp -= this.damage;
+		System.out.println(Goblin.hp);
+		return Goblin.hp;
+				
+	public void 스킬사용() {
+		System.out.println(1.배쉬);
+		System.out.println(2.방패치기);
+		System.out.println(3.양날의검);
+		
+	}
 	
 	}
 	private static int damage() {
