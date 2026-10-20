@@ -2,6 +2,7 @@ package com.kh.run;
 
 import com.kh.CheckedException;
 import com.kh.controller.UnCheckedException;
+import com.kh.diary.view.DiaryView;
 
 public class Run {
 	public static void main(String[] args) {
@@ -33,6 +34,8 @@ public class Run {
 		//ue.bomb();
 		CheckedException ce = new CheckedException();
 		//ce.readString();
-		ce.bang();
+		//ce.bang();
+		DiaryView dv = new DiaryView();
+		dv.mainMenu();
 }
 }

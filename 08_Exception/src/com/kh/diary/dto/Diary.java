@@ -1,6 +1,6 @@
-package com.kh.dairy.dto;
+package com.kh.diary.dto;
 
-public class Dairy {
+public class Diary {
 	// 다이어리를 꾸민 뒤, 꾸민 모양으로 출력이 되는 시스템.
 	
 	// Field //
@@ -8,7 +8,7 @@ public class Dairy {
 	private String title;
 	private String signature;
 	// Constructor //
-	public Dairy(String logo, String title, String signature) {
+	public Diary(String logo, String title, String signature) {
 		super();
 		this.logo = logo;
 		this.title = title;
